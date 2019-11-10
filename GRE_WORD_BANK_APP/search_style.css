@@ -1,0 +1,65 @@
+			body {
+  				background-image: url("alphabet_3.jpg");
+				margin: 0;
+				padding: 0;
+
+			}
+
+
+
+
+			form {
+				width: 630px;
+				margin: 0 auto;
+			}
+
+			/*This body and form are added as extra*/
+
+			#ans {
+				background-color: #FFEBC3;
+				width: /*600px*/607px;
+				margin: 20px auto;
+				/*font-family: Arial, Helvetica, sans-serif;*/
+				font-size: 25px
+			}
+
+			.tooltip {
+			    position: relative;
+			    display: inline-block;
+			    /*border-bottom: 1px dotted black*/;
+			}
+
+			.tooltip .tooltiptext {
+			    visibility: hidden;
+			    width: 300px;
+			    background-color: #5CD9B1;/*#FAFFBD;*/ /*#5CD9B1;*/
+			    color: #fff;
+			    /*font-family: Arial, Helvetica, sans-serif;*/
+			    text-align: center;
+			    border-radius: 6px;
+			    padding: 5px 0;
+			    position: absolute;
+			    z-index: 1;
+			    bottom: 150%;
+			    left: 50%;
+			    margin-left: -150px;
+			}
+
+			.tooltip .tooltiptext::after {
+			    content: "";
+			    position: absolute;
+			    top: 100%;
+			    left: 50%;
+			    margin-left: -5px;
+			    border-width: 5px;
+			    border-style: solid;
+			    border-color: #5CD9B1 transparent transparent transparent;
+			}
+
+			.tooltip:hover .tooltiptext {
+			    visibility: visible;
+			}
+
+			/*tooltiptext p {
+				 display:inline-block;
+			}*/
