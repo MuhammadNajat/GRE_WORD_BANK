@@ -10,18 +10,8 @@
 
 	<link rel="stylesheet" type="text/css" href="test_nav_css.css">
 
-	<!-- <link rel="stylesheet" type="text/css" href="search_style.css"> -->
-
 </head>
 <body style="font-family: sans-serif;">
-
-<!-- 
-<div class="bgner"> 
-	<p style="font-size: 40px;">GRE WORD BANK</p>
-</div>
--->
-
-<!--header-->
 
 <div style="background-color: #D7D8EC; padding: 6px 7px">
 
@@ -39,17 +29,14 @@
 <!--header/-->
 
 <div class="topnav" id="myTopnav">
-<!-- p style="background-color: green; font-size: 20px;">GRE WORD BANK</p> -->
-	<a href="index.php">&emsp; &emsp; Home &emsp; &emsp;</a>
+    <a href="index.php">&emsp; &emsp; Home &emsp; &emsp;</a>
     <a href="search_editor.php">&emsp; Vocabs Room &emsp;</a>
-  	<a href="liveSearch.php">&emsp; &emsp; Live Search &emsp; &emsp;</a>
+    <a href="liveSearch.php">&emsp; &emsp; Live Search &emsp; &emsp;</a>
     <a href="exam.php">&emsp; &emsp; Exam Room &emsp; &emsp;</a>
     <a href="about.php">&emsp; &emsp; About Us &emsp; &emsp;</a>
-    
-  <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> -->
 
-  	<?php
-    	if(isset($_SESSION["username"])) {
+  <?php
+      if(isset($_SESSION["username"])) {
   ?>
 
     		<a href="profile.php">&emsp; &emsp; <?php echo $_SESSION["username"]; ?> &emsp; &emsp;</a>
