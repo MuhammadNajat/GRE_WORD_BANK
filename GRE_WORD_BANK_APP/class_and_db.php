@@ -3,7 +3,6 @@
 	define("DB_USER", "username");
 	define("DB_PASS", "password");
 	define("DB_NAME", "test");
-	//define("DB_NAME", "mydb01");
 ?>
 
 <?php
@@ -41,7 +40,6 @@ class Database {
 
 
 	$obj = new Database();
-	//$sql = "SELECT * FROM grewords";
 	$sql = "SELECT * FROM words";
 	$result = $obj->select($sql);
 
@@ -50,21 +48,10 @@ class Database {
 	if($result) {
 
 		while($row = $result->fetch_assoc()) {
-			/*
-				echo "Word: " . $row['word'] . " POS: " . $row['pos'] . " Meaning: " . $row['meaning'] . " Example: " . $row['example'] . "<br>";
-			*/
 			$entry[$row['word']] = array($row['word'], $row['pof'], $row['em'], $row['bm'], $row['ex']);
 		}
 
 		$num = count($entry);
-
-		/*
-		echo "<hr/>";
-
-		foreach ($entry as $key => $value) {
-			echo $key . " : " . $value[0] . " : " . $value[1] . " : " . $value[2] . "<br>";
-		}
-		*/
 
 	}
 
